@@ -1,0 +1,99 @@
+/* =========================================================
+   INLINE MESSAGE EDIT (DeepSeek / ChatGPT style)
+   =========================================================
+   The user bubble turns into an editable textarea with
+   Save / Cancel buttons. No modal.
+   ========================================================= */
+
+.message.user.editing {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.message.user.editing .user-actions {
+    display: none;
+}
+
+.user-bubble.editing {
+    max-width: min(720px, 90%);
+    width: 100%;
+    padding: 0;
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 14px;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.14);
+    overflow: hidden;
+}
+
+.user-edit-input {
+    width: 100%;
+    min-height: 56px;
+    max-height: 240px;
+
+    padding: 12px 14px;
+
+    border: 0;
+    outline: 0;
+    resize: none;
+
+    background: transparent;
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.55;
+
+    overflow-y: auto;
+}
+
+.user-edit-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+
+    padding: 8px 10px 10px;
+
+    border-top: 1px solid var(--border);
+    background: rgba(139, 92, 246, 0.03);
+}
+
+.user-edit-button {
+    height: 30px;
+    min-width: 66px;
+    padding: 0 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: var(--surface-2);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: background .1s ease, border-color .1s ease, color .1s ease;
+}
+
+.user-edit-button:hover {
+    background: var(--surface-3);
+}
+
+.user-edit-button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.user-edit-button.primary:hover {
+    background: var(--accent-2);
+}
+
+.user-edit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

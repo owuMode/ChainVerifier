@@ -1,0 +1,126 @@
+/* =========================================================
+   CUSTOM IN-APP DIALOGS (replace browser confirm/prompt)
+   ========================================================= */
+
+.dialog-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity .13s ease, visibility .13s ease;
+}
+
+.dialog-overlay.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.dialog-box {
+    width: min(420px, calc(100% - 32px));
+
+    padding: 20px 22px 18px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.45);
+
+    transform: translateY(6px) scale(.98);
+    transition: transform .13s ease;
+}
+
+.dialog-overlay.open .dialog-box {
+    transform: translateY(0) scale(1);
+}
+
+.dialog-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.dialog-message {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--text-2);
+    margin-bottom: 14px;
+
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.dialog-input {
+    width: 100%;
+    height: 38px;
+
+    margin-bottom: 14px;
+    padding: 0 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface-2);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.dialog-input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.dialog-button {
+    height: 34px;
+    min-width: 76px;
+    padding: 0 14px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface-2);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: background .1s ease, border-color .1s ease, color .1s ease;
+}
+
+.dialog-button:hover {
+    background: var(--surface-3);
+}
+
+.dialog-button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.dialog-button.primary:hover {
+    background: var(--accent-2);
+}

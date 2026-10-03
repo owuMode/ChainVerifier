@@ -1,0 +1,156 @@
+/* =========================================================
+   HIGHLIGHT.JS THEME (GitHub Dark, tuned to match Rhea)
+   =========================================================
+   Applied only to <pre><code> blocks inside AI replies.
+   ========================================================= */
+
+.ai-text .md-code-pre code.hljs,
+.ai-text .md-code-pre code[class*="language-"] {
+    background: transparent !important;
+    color: #e6edf3;
+}
+
+/* General */
+.hljs {
+    color: #e6edf3;
+}
+
+/* Comments */
+.hljs-comment,
+.hljs-quote {
+    color: #8b949e;
+    font-style: italic;
+}
+
+/* Keywords */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-section,
+.hljs-link {
+    color: #ff7b72;
+}
+
+/* Strings, numbers, regexp, meta */
+.hljs-string,
+.hljs-meta,
+.hljs-regexp,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+    color: #a5d6ff;
+}
+
+/* Numbers, constants, built-ins */
+.hljs-number,
+.hljs-attr,
+.hljs-attribute,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+    color: #79c0ff;
+}
+
+/* Function names, titles */
+.hljs-title,
+.hljs-title.function_,
+.hljs-title.class_,
+.hljs-function .hljs-title {
+    color: #d2a8ff;
+}
+
+/* Tag names, selectors */
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+    color: #7ee787;
+}
+
+/* Operators, punctuation */
+.hljs-operator,
+.hljs-punctuation {
+    color: #ffa657;
+}
+
+/* Params, props */
+.hljs-params,
+.hljs-property {
+    color: #ffa657;
+}
+
+/* Deletion */
+.hljs-deletion {
+    color: #ffa198;
+    background: rgba(248, 81, 73, 0.10);
+}
+
+/* Emphasis */
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: 700;
+}
+
+/* Light theme override */
+body.light .hljs {
+    color: #24292f;
+}
+
+body.light .hljs-comment,
+body.light .hljs-quote {
+    color: #6e7781;
+}
+
+body.light .hljs-keyword,
+body.light .hljs-selector-tag,
+body.light .hljs-literal,
+body.light .hljs-section,
+body.light .hljs-link {
+    color: #cf222e;
+}
+
+body.light .hljs-string,
+body.light .hljs-meta,
+body.light .hljs-regexp,
+body.light .hljs-symbol,
+body.light .hljs-bullet,
+body.light .hljs-addition {
+    color: #0a3069;
+}
+
+body.light .hljs-number,
+body.light .hljs-attr,
+body.light .hljs-attribute,
+body.light .hljs-variable,
+body.light .hljs-template-variable,
+body.light .hljs-class .hljs-title,
+body.light .hljs-type {
+    color: #0550ae;
+}
+
+body.light .hljs-title,
+body.light .hljs-title.function_,
+body.light .hljs-title.class_,
+body.light .hljs-function .hljs-title {
+    color: #8250df;
+}
+
+body.light .hljs-name,
+body.light .hljs-selector-id,
+body.light .hljs-selector-class,
+body.light .hljs-selector-attr,
+body.light .hljs-selector-pseudo {
+    color: #116329;
+}
+
+body.light .hljs-operator,
+body.light .hljs-punctuation,
+body.light .hljs-params,
+body.light .hljs-property {
+    color: #953800;
+}
