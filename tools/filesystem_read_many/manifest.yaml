@@ -1,0 +1,29 @@
+# tools/filesystem_read_many/manifest.yaml
+#
+# filesystem_read_many — read ALL text files in a folder in one call.
+#
+# MODERATE because it reads user files (same permission as filesystem).
+# No writes, no deletes, no network.
+
+tool_id: filesystem_read_many
+name: Read Folder Contents
+description: >
+  Reads the contents of all text files in a folder (or a filtered
+  subset by extension). Skips binary files, caps each file size,
+  and caps the total number of files. Returns a structured list
+  of {path, content} entries.
+
+category: system
+version: "1.0.0"
+
+permission_level: MODERATE
+
+capabilities:
+  - read_only
+  - no_network
+  - restricted_paths
+  - batch_read
+
+denied: false
+
+input_schema_file: schema.json

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "filesystem input",
+  "description": "List a folder or read a text file. Read-only.",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": ["list", "read"],
+      "description": "What to do. 'list' shows a folder's entries; 'read' returns a file's text."
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096,
+      "description": "Path to a folder (for 'list') or a file (for 'read'). Use ~/Desktop, ~/Documents, %USERPROFILE%\\Desktop, or the bare name Desktop."
+    }
+  },
+  "required": ["action", "path"],
+  "additionalProperties": false
+}

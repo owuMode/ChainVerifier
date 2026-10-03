@@ -1,0 +1,28 @@
+# tools/filesystem/manifest.yaml
+#
+# filesystem — read-only access to files and folders.
+#
+# Permission level MODERATE because it reads user files. No writes,
+# no deletes, no moves in this phase. The verifier independently
+# confirms the reported content.
+
+tool_id: filesystem
+name: Filesystem
+description: >
+  Lists the contents of a folder, or reads the contents of a text file.
+  Read-only. No writes, no deletes, no moves. Path traversal is blocked
+  and file size is capped.
+
+category: system
+version: "1.0.0"
+
+permission_level: MODERATE
+
+capabilities:
+  - read_only
+  - no_network
+  - restricted_paths
+
+denied: false
+
+input_schema_file: schema.json

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "datetime input",
+  "description": "No arguments. Returns the current date and time.",
+  "type": "object",
+  "properties": {},
+  "required": [],
+  "additionalProperties": false
+}

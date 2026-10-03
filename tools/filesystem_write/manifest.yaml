@@ -1,0 +1,33 @@
+# tools/filesystem_write/manifest.yaml
+#
+# filesystem_write — modify files and folders on disk.
+#
+# DESTRUCTIVE because it can:
+#   * permanently delete files (with .bak backup)
+#   * overwrite existing files (with .bak backup)
+#   * move/rename files
+#   * create and remove folders
+#
+# Every operation is audited and requires explicit user confirmation.
+
+tool_id: filesystem_write
+name: Filesystem (Write)
+description: >
+  Create, append, overwrite, delete, or move files and folders.
+  Backs up files before write/delete. Restricted to user folders.
+  Every operation requires explicit confirmation.
+
+category: system
+version: "1.0.0"
+
+permission_level: DESTRUCTIVE
+
+capabilities:
+  - write
+  - destructive
+  - file_operations
+  - backed_up
+
+denied: false
+
+input_schema_file: schema.json
