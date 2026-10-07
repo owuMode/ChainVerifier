@@ -1,9 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "system_info input",
-  "description": "No arguments. Returns facts about the current machine.",
-  "type": "object",
-  "properties": {},
-  "required": [],
-  "additionalProperties": false
-}
