@@ -15,7 +15,7 @@ Find, verify and manage static pointer chains with a dark, professional interfac
 
 ---
 
-## 📖 About
+##  About
 
 **ChainVerifier** is a Windows tool for reverse engineers, game modders, and security researchers who work with pointer chains.
 
@@ -30,7 +30,7 @@ Built with a **C++ backend** for speed and a **PyQt5 frontend** for a clean, pro
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---------|-------------|
@@ -46,7 +46,7 @@ Built with a **C++ backend** for speed and a **PyQt5 frontend** for a clean, pro
 
 ---
 
-## 🚀 Download & Install
+##  Download & Install
 
 ### Requirements
 
@@ -69,7 +69,7 @@ Built with a **C++ backend** for speed and a **PyQt5 frontend** for a clean, pro
 
 ---
 
-## 🎮 How to Use
+##  How to Use
 
 ### Basic Workflow
 
@@ -99,7 +99,7 @@ Built with a **C++ backend** for speed and a **PyQt5 frontend** for a clean, pro
 
 ---
 
-## 📋 Changelog
+##  Changelog
 
 ### v2.9.1 (2026-10-11)
 
