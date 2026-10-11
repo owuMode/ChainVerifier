@@ -38,7 +38,7 @@ Built with a **C++ backend** for speed and a **PyQt5 frontend** for a clean, pro
 | **5 Scanning Modes** | AOB pattern scan (with wildcards), range scan, unknown value scan, string scan (ASCII + UTF-16), and full pointer scan. Auto-detects 32-bit / 64-bit processes. |
 | **Built-in Tools** | Bulk freeze manager with visual indicator, hex viewer/editor, Cheat Engine pointer map import (auto-detects format), Send-to-Chains shortcut. |
 | **Custom Dark UI** | Modern dark theme with splash screen. Customizable fonts, colors, row height, panel visibility. Real-time value updates with highlight on change. |
-| **C++ Performance** | Multi-threaded parallel scanning, chunked region scanning (1 MB chunks), adaptive threading. Battery Saver / Balanced / Performance / Extreme modes. |
+| **Performance** | Multi-threaded parallel scanning, chunked region scanning (1 MB chunks), adaptive threading. Battery Saver / Balanced / Performance / Extreme modes. |
 | **Auto-Update** | Silent startup check notifies you when a newer version is available. One click to download. Windows native notifications with logo. |
 | **Encrypted Save Files** | Chains saved as `.owu` files with XOR + SHA-256 checksum + zlib compression. Portable and tamper-resistant. Auto-save with backups. |
 | **Undo / Redo + Hotkeys** | C++ ring buffer undo/redo and global hotkeys (`Ctrl+Alt+A` / `S` / `F` / `H`). Threaded file I/O keeps the UI responsive. |
@@ -65,7 +65,7 @@ Built with a **C++ backend** for speed and a **PyQt5 frontend** for a clean, pro
 
 3. **Run** `ChainVerifier.exe` as Administrator.
 
-> **No Python installation required.** The EXE is fully self-contained.
+>  This tool is contain any virus.
 
 ---
 
